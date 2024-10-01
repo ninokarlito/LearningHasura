@@ -3,6 +3,7 @@
 
 1. Metric Berikut adalah bagian dari histogram dalam Prometheus, yang digunakan untuk mengukur waktu yang dibutuhkan Hasura untuk mengambil sekumpulan event
 
+
 `hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0`
 `hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0`
 

@@ -1,10 +1,10 @@
-
 # Analisis V1/Metrics dari Postman 
-
+![metriks](https://github.com/user-attachments/assets/5b62a1be-ecbc-4743-8655-1c944097c2f6)
 1. Metric Berikut `hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0`
 `hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0`
 
-  adalah bagian dari histogram dalam Prometheus, yang digunakan untuk mengukur waktu yang dibutuhkan Hasura untuk mengambil sekumpulan event
+  adalah bagian dari histogram dalam
+ Prometheus, yang digunakan untuk mengukur waktu yang dibutuhkan Hasura untuk mengambil sekumpulan event
 Berikut Rincian metrics nya:
 - **Nama Metrik (`hasura_event_fetch_time_per_batch_seconds_bucket`)**:  
   Ini adalah metrik histogram yang menunjukkan waktu yang dibutuhkan untuk mengambil batch (sekumpulan) event dalam hitungan detik.

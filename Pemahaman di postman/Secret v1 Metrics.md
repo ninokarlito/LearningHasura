@@ -3,7 +3,8 @@
 yang digunakan untuk mengukur waktu yang dibutuhkan Hasura untuk mengambil sekumpulan event
 `hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0`
 `hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0`
-. Berikut Rincian metrics nya:
+
+Berikut Rincian metrics nya:
 - **Nama Metrik (`hasura_event_fetch_time_per_batch_seconds_bucket`)**:  
   Ini adalah metrik histogram yang menunjukkan waktu yang dibutuhkan untuk mengambil batch (sekumpulan) event dalam hitungan detik.
 - **Bucket (`{le="1.0e-4"}`)**:  

@@ -1,6 +1,7 @@
 
 # Analisis V1/Metrics dari Postman 
 Metric Berikut adalah bagian dari histogram dalam Prometheus, yang digunakan untuk mengukur waktu yang dibutuhkan Hasura untuk mengambil sekumpulan event
+
 `hasura_event_fetch_time_per_batch_seconds_bucket{le="1.0e-4"} 0`
 `hasura_event_fetch_time_per_batch_seconds_bucket{le="3.0e-4"} 0`
 
@@ -13,10 +14,10 @@ Berikut Rincian metrics nya:
   Nilai ini menunjukkan bahwa tidak ada event yang waktu pengambilannya kurang dari atau sama dengan 0,0001 detik.
 Dan belum ada event yang waktu pengambilannya tercatat di bawah atau sama dengan 0,0001 detik dalam bucket ini.
 
-# hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0 
+`hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0 `
 menggambarkan performa eksekusi GraphQL di Hasura.
 
-# `hasura_graphql_execution_time_seconds_sum{operation_type="mutation"} 0.0` 
+`hasura_graphql_execution_time_seconds_sum{operation_type="mutation"} 0.0` 
 metrics diatas menunjukkan total waktu eksekusi dari semua operasi **mutasi** di Hasura. 
 Berikut rinciannya:
 - **Nama Metrik (`hasura_graphql_execution_time_seconds_sum`)**:  
@@ -27,7 +28,7 @@ Berikut rinciannya:
   Ini berarti total waktu eksekusi semua operasi mutasi hingga saat ini adalah **0 detik**.
 Di metrics tsb tidak ada waktu eksekusi yang tercatat untuk mutasi, atau belum ada operasi mutasi yang dilakukan dalam periode pengukuran ini.
 
-#  `hasura_graphql_execution_time_seconds_sum{operation_type="query"} 0.382292266`
+`hasura_graphql_execution_time_seconds_sum{operation_type="query"} 0.382292266`
 Metrik diatas menunjukkan total waktu yang dihabiskan untuk mengeksekusi semua operasi **query** di Hasura.
 Berikut penjelasannya:
 - **Nama Metrik (`hasura_graphql_execution_time_seconds_sum`)**:  
@@ -38,7 +39,7 @@ Berikut penjelasannya:
  berarti total waktu yang telah dihabiskan untuk mengeksekusi semua operasi query hingga saat ini adalah **0,382 detik** (sekitar 382 milidetik).
 Di metrics tsb seluruh query yang dijalankan sejauh ini telah menghabiskan waktu sekitar 0,38 detik secara total.
 
-# `hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-6",role="primary"} 0` 
+`hasura_postgres_connection_init_time_bucket{conn_info="HASURA_GRAPHQL_DATABASE_URL",source_name="default",le="1.0e-6",role="primary"} 0` 
 Metrik diatas memberikan informasi tentang waktu inisialisasi koneksi ke database PostgreSQL oleh Hasura. 
 Berikut penjelasannya:
 - **Nama Metrik (`hasura_postgres_connection_init_time_bucket`)**:  

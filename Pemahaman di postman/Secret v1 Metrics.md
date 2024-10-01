@@ -12,10 +12,11 @@ yang digunakan untuk mengukur waktu yang dibutuhkan Hasura untuk mengambil sekum
   Nilai ini menunjukkan bahwa tidak ada event yang waktu pengambilannya kurang dari atau sama dengan 0,0001 detik.
 Dan belum ada event yang waktu pengambilannya tercatat di bawah atau sama dengan 0,0001 detik dalam bucket ini.
 
-# Metrik hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0 menggambarkan performa eksekusi GraphQL di Hasura.
+# hasura_graphql_execution_time_seconds_bucket{operation_type="mutation",le="1.0e-2"} 0 
+menggambarkan performa eksekusi GraphQL di Hasura.
 
-# Metrik `hasura_graphql_execution_time_seconds_sum{operation_type="mutation"} 0.0` 
-menunjukkan total waktu eksekusi dari semua operasi **mutasi** di Hasura. 
+# `hasura_graphql_execution_time_seconds_sum{operation_type="mutation"} 0.0` 
+metrics menunjukkan total waktu eksekusi dari semua operasi **mutasi** di Hasura. 
 Berikut rinciannya:
 - **Nama Metrik (`hasura_graphql_execution_time_seconds_sum`)**:  
   Ini adalah metrik yang menjumlahkan total waktu eksekusi operasi GraphQL dalam detik.

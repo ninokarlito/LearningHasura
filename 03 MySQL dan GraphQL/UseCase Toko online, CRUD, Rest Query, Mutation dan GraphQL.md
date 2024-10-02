@@ -4,7 +4,6 @@
 
 ![image](https://github.com/user-attachments/assets/33154fd7-51af-4440-ac80-43e41ac4d51a)
 
-
 ### Create atau Insert Data
 Tampilan di Hasura GraphQL
 ![d5860481-415c-488f-bad3-86dd97438ee1](https://github.com/user-attachments/assets/d1e4e248-461c-44ef-923a-b5437edde9f7)
@@ -12,7 +11,7 @@ Tampilan di Hasura GraphQL
 Tampilan di DBeaver
 ![b5639b66-ced1-4e68-a165-0540f9bc627b](https://github.com/user-attachments/assets/6509ce72-015a-4254-988a-50cd2166860a)
 
-insert data Transaksi
+Insert data Transaksi
 ![WhatsApp Image 2024-10-02 at 17 18 35](https://github.com/user-attachments/assets/78b9d5a6-2454-4ac6-b7d3-58285797ddfe)
 
 

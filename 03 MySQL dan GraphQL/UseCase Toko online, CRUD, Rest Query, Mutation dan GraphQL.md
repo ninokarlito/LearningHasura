@@ -12,6 +12,9 @@ Tampilan di Hasura GraphQL
 Tampilan di DBeaver
 ![b5639b66-ced1-4e68-a165-0540f9bc627b](https://github.com/user-attachments/assets/6509ce72-015a-4254-988a-50cd2166860a)
 
+insert data Transaksi
+![WhatsApp Image 2024-10-02 at 17 18 35](https://github.com/user-attachments/assets/78b9d5a6-2454-4ac6-b7d3-58285797ddfe)
+
 
 ## Update Data
 Tampilan di Hasura GraphQL
@@ -29,12 +32,17 @@ Tampilan di DBeaver
 ![WhatsApp Image 2024-10-02 at 11 17 22](https://github.com/user-attachments/assets/77dad509-7681-4728-8a78-234e2ae88ec6)
 
 
-## Read Data 
+## Read Data Query
 ![WhatsApp Image 2024-10-02 at 11 25 42](https://github.com/user-attachments/assets/d476378d-2929-4585-884e-8e7e38acea2b)
+
+Query Join
+![f9568ef0-ba4b-4114-9bdf-edb34276afb3](https://github.com/user-attachments/assets/eeebcbf0-87d0-42e0-bd4c-3db3c8445d8f)
+
+Query Where
+![WhatsApp Image 2024-10-02 at 17 21 09](https://github.com/user-attachments/assets/6ca62be4-dd46-4227-8875-d0148ddc6df8)
 
 ## Hasil Membuat REST Query di GraphQL
 ![WhatsApp Image 2024-10-02 at 11 09 19](https://github.com/user-attachments/assets/2d749f8c-bd34-4695-833e-d4057b6b5b2c)
-
 
 ## Get Rest Query di Postman
 ![WhatsApp Image 2024-10-02 at 11 12 08](https://github.com/user-attachments/assets/99b8e22f-7345-4bd2-bb61-3785438a5184)

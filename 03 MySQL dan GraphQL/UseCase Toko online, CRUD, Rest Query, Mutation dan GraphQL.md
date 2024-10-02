@@ -32,7 +32,8 @@ Tampilan di DBeaver
 ![WhatsApp Image 2024-10-02 at 11 25 42](https://github.com/user-attachments/assets/d476378d-2929-4585-884e-8e7e38acea2b)
 
 ## Hasil Membuat REST Query di GraphQL
-![WhatsApp Image 2024-10-02 at 11 09 19](https://github.com/user-attachments/assets/d8bfb9cf-02b9-47a8-ae86-1a6d78b8e511)
+![WhatsApp Image 2024-10-02 at 11 09 19](https://github.com/user-attachments/assets/2d749f8c-bd34-4695-833e-d4057b6b5b2c)
+
 
 ## Get Rest Query di Postman
 ![WhatsApp Image 2024-10-02 at 11 12 08](https://github.com/user-attachments/assets/99b8e22f-7345-4bd2-bb61-3785438a5184)

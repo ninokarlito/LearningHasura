@@ -4,7 +4,7 @@
 
 
 
-## Create atau Insert Data
+### Create atau Insert Data
 Tampilan di Hasura GraphQL
 ![d5860481-415c-488f-bad3-86dd97438ee1](https://github.com/user-attachments/assets/d1e4e248-461c-44ef-923a-b5437edde9f7)
 
@@ -23,12 +23,9 @@ Tampilan di DBeaver
 ## Delete Data
 
 
-
-
-
 ## Read Data 
 
 
 ## Menggunakan REST Query
 
-![image](https://github.com/user-attachments/assets/9970384a-6a98-41b9-b2c4-9f8b7abd3c6f)
+

@@ -21,11 +21,20 @@ Tampilan di DBeaver
 
 
 ## Delete Data
+Tampilan di Hasura GraphQL
+![WhatsApp Image 2024-10-02 at 11 18 02](https://github.com/user-attachments/assets/1577b571-5247-4b19-b3f6-e24c0e2db672)
+
+Tampilan di DBeaver
+![WhatsApp Image 2024-10-02 at 11 17 22](https://github.com/user-attachments/assets/77dad509-7681-4728-8a78-234e2ae88ec6)
 
 
 ## Read Data 
+![WhatsApp Image 2024-10-02 at 11 25 42](https://github.com/user-attachments/assets/d476378d-2929-4585-884e-8e7e38acea2b)
 
+## Hasil Membuat REST Query di GraphQL
+![WhatsApp Image 2024-10-02 at 11 09 19](https://github.com/user-attachments/assets/d8bfb9cf-02b9-47a8-ae86-1a6d78b8e511)
 
-## Menggunakan REST Query
+## Get Rest Query di Postman
+![WhatsApp Image 2024-10-02 at 11 12 08](https://github.com/user-attachments/assets/99b8e22f-7345-4bd2-bb61-3785438a5184)
 
 

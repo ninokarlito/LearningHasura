@@ -1,9 +1,10 @@
 ## 1. Dashboard Hasura GraphQL
 
-Berikut untuk tampilan Query GraphQL di Hasura yang telah disiapkan 
+Berikut untuk tampilan Query GraphQL di Hasura yang telah disiapkan.
 ![image](https://github.com/user-attachments/assets/e39e970d-fb69-4a72-a91b-6b73cfd9db0f)
 ### Query 1: Input 
-```query MyQuery {
+```
+query MyQuery {
   TABEL1 {
     id
     isi1
@@ -13,7 +14,8 @@ Berikut untuk tampilan Query GraphQL di Hasura yang telah disiapkan
 } 
 ```
 ### Query 2: Output 
-```{
+```
+{
   "data": {
     "TABEL1": [
       {
@@ -93,7 +95,7 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
 - **Query Latency (P95)**: 9.50 ms
 - **Total Mutations (Total Mutasi)**: 0
 - **Mutation Latency (Latensi Mutasi)**: 0 ms
-- 
+  
 1. **Total Queries: 5**
    - Ini berarti selama periode pengamatan (terakhir 30 menit, sesuai pengaturan di kanan atas), terdapat 5 kuery GraphQL yang dijalankan melalui Hasura.
    - Penting untuk memantau apakah jumlah kuery meningkat secara signifikan atau konsisten rendah. Jika ada lonjakan tiba-tiba dalam kuery, itu bisa menandakan peningkatan trafik atau masalah performa pada aplikasi.

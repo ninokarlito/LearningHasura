@@ -1,1 +1,1 @@
-Hello world
+*Grafana* yaitu platform open-source yang **bertujuan untuk pemantauan, menganalisis data dan memiliki banyak fitur yang powerful untuk memonitor dan menganalisa**. Memungkinkan pengguna untuk **membuat dashboard yang real-time serta interaktif**. Dengan Grafana, pengguna juga **dapat menavigasi, memahami data dari berbagai sumber, seperti database, sistem pemantauan, atau layanan cloud, dan memvisualisasikan metrics menjadi grafik-grafik yang menarik untuk dilihat dan mudah dimengerti.**

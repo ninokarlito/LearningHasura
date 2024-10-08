@@ -48,3 +48,85 @@ Hasura GraphQL Engine).
 -Federasi dan Sinkronisasi Metadata: Setiap tim yang bekerja pada bagian metadata mereka dapat menyinkronkan hasil kerja mereka ke supergraph utama tanpa harus mengganggu pekerjaan tim lain.
 
 -Penyebaran: Setelah semua elemen supergraph diuji dan siap, API tersebut dapat dideploy baik di lingkungan cloud Hasura atau di infrastruktur lokal.
+
+Hasura v3 membawa sejumlah pembaruan signifikan dibandingkan Hasura v2, terutama dengan peralihan ke arsitektur Data Delivery Network (DDN). Berikut perbedaan utamanya:
+
+## 3. Perbedaan fitur Hasura V3 & V2
+1. **Autentikasi dan Otorisasi**:
+   - Hasura v3 menawarkan mekanisme autentikasi yang lebih fleksibel, termasuk autentikasi berbasis JWT dan webhook. V3 juga memperkenalkan kontrol akses berbasis peran yang lebih detail, memungkinkan pengaturan izin hingga tingkat baris dan kolom【23†source】【24†source】.
+
+2. **Kinerja dan Skalabilitas**:
+   - V3 mengoptimalkan eksekusi query API dan caching dengan DDN, yang meningkatkan kinerja serta mengurangi latensi. Arsitektur DDN memungkinkan aplikasi untuk menangani beban tinggi dan mengaktifkan deployment tanpa downtime【23†source】【24†source】.
+
+3. **Model Harga**:
+   - Pada Hasura v3, harga didasarkan pada model aktif. Hanya model yang menerima lebih dari 1.000 permintaan per bulan yang dikenakan biaya, memberikan prediksi biaya yang lebih jelas dan menghindari pembayaran untuk model yang tidak aktif【23†source】.
+
+4. **Deployment dan CI/CD**:
+   - V3 mempercepat deployment dengan fitur CI/CD instan, perubahan metadata langsung, dan tanpa downtime. Fitur ini juga memungkinkan pengontrolan versi metadata yang lebih baik, memudahkan pengelolaan perubahan【24†source】.
+
+5. **Manajemen Metadata dan API**:
+   - Di v3, manajemen metadata lebih efisien dengan pendekatan berbasis kode. Pengembang dapat mendefinisikan seluruh skema API secara deklaratif dan mengontrol versi metadata dengan fitur kolaborasi yang lebih baik【24†source】.
+
+6. **Native Data Connectors (NDCs)**:
+   - Hasura v3 mendukung integrasi yang lebih luas dengan sumber data eksternal menggunakan Native Data Connectors, memungkinkan penggabungan berbagai sumber data ke dalam satu supergraph【24†source】.
+
+Dengan peningkatan-peningkatan ini, Hasura v3 menjadi lebih fleksibel, scalable, dan lebih hemat biaya dibandingkan versi sebelumnya.
+
+## Keunggulan dan kekurangan
+
+### **Keunggulan Hasura v2**:
+
+1. **Sederhana dan Mudah Dikelola**:
+   - **Hasura v2** cocok untuk pengembangan cepat dengan kebutuhan sederhana, seperti membangun GraphQL API dari database PostgreSQL tanpa perlu menulis banyak kode backend. 
+   - Arsitekturnya lebih mudah untuk diatur dan digunakan untuk tim kecil dengan lingkungan pengembangan yang tidak terlalu kompleks.
+
+2. **Stabilitas**:
+   - Sebagai versi yang telah lebih lama digunakan, **Hasura v2** memiliki basis pengguna yang lebih luas dan stabilitas yang sudah teruji di berbagai aplikasi komersial. 
+
+3. **Harga yang Lebih Transparan**:
+   - Model harga **v2** berdasarkan pada jumlah query yang dijalankan, memberikan perkiraan biaya yang lebih mudah diprediksi untuk banyak kasus penggunaan yang sudah ada.
+
+### **Kekurangan Hasura v2**:
+
+1. **Kurang Skalabilitas**:
+   - **v2** tidak dirancang untuk menangani aplikasi besar yang tersebar secara global dengan query caching atau pengoptimalan distribusi data. 
+   - Tidak ada fitur seperti **DDN** yang dapat mengatasi latensi dalam permintaan dari berbagai lokasi geografis.
+
+2. **Pengelolaan Metadata yang Terbatas**:
+   - Pengelolaan metadata dalam **v2** masih bergantung pada konsol atau database metadata, yang dapat membatasi kolaborasi tim dan menyebabkan tantangan dalam hal CI/CD otomatis【23†source】.
+
+---
+
+### **Keunggulan Hasura v3**:
+
+1. **Performa dan Skalabilitas Tinggi**:
+   - **Hasura v3** memiliki performa yang lebih baik berkat **Data Delivery Network (DDN)**, yang menyediakan jaringan global dengan caching dan eksekusi query yang dioptimalkan, memberikan pengalaman API yang lebih cepat dan scalable tanpa perlu downtime【23†source】【24†source】.
+   
+2. **Pengelolaan Metadata Lebih Fleksibel**:
+   - Di **v3**, metadata sepenuhnya dikelola melalui **CLI dan ekstensi VS Code**, dengan kemampuan untuk memantau dan mengontrol versi metadata, sehingga pengembang bisa bekerja dengan lebih kolaboratif dan efisien【24†source】.
+
+3. **Model Harga Berbasis Penggunaan Aktif**:
+   - **Hasura v3** menawarkan model harga berdasarkan "model aktif", artinya hanya model data yang digunakan secara aktif yang dikenakan biaya. Ini memberikan fleksibilitas biaya yang lebih besar, terutama untuk sistem yang memiliki banyak model tidak aktif【23†source】.
+
+4. **Native Data Connectors (NDCs)**:
+   - Memungkinkan integrasi dengan lebih banyak jenis sumber data dan API eksternal, memberi fleksibilitas lebih besar untuk membangun "supergraph" yang menggabungkan banyak sumber data【24†source】.
+
+5. **CI/CD Instan dan Tanpa Downtime**:
+   - **v3** memperkenalkan kemampuan CI/CD yang lebih cepat dan seamless, memungkinkan deployment metadata secara real-time tanpa menghentikan aplikasi atau sistem【24†source】.
+
+### **Kekurangan Hasura v3**:
+
+1. **Lebih Kompleks untuk Setup Awal**:
+   - **Hasura v3** memiliki arsitektur yang lebih kompleks, terutama dengan fitur federasi data dan **DDN**. Ini bisa membuat konfigurasi awal lebih menantang bagi tim kecil atau aplikasi dengan kebutuhan sederhana.
+
+2. **Biaya Lebih Tinggi pada Skala Besar**:
+   - Walaupun model harga v3 berbasis model aktif, penggunaan pada skala besar dengan banyak model aktif dapat meningkatkan biaya secara signifikan dibandingkan **v2**, terutama jika aplikasi membutuhkan banyak sumber data dan entitas yang selalu digunakan【24†source】.
+
+3. **Penggunaan Metadata yang Lebih Berfokus pada CLI**:
+   - Walaupun CLI memberikan kontrol penuh terhadap metadata, ini bisa menjadi hambatan bagi pengguna yang terbiasa dengan pendekatan GUI yang lebih sederhana pada **v2**.
+
+---
+
+### Kesimpulan:
+- **Hasura v2** lebih cocok untuk proyek kecil hingga menengah yang membutuhkan solusi sederhana, cepat, dan stabil.
+- **Hasura v3** ideal untuk aplikasi skala besar yang membutuhkan performa tinggi, federasi data, dan integrasi global yang kompleks dengan biaya yang lebih fleksibel, terutama jika diprioritaskan pada model data aktif.

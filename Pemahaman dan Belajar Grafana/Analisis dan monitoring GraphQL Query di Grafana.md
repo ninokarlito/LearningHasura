@@ -112,6 +112,16 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
 4. **Mutation Latency: 0 ms**
    - Karena tidak ada mutasi yang terjadi, tidak ada latensi yang bisa diukur. Jika mutasi terjadi di masa depan, latensi ini akan mengukur seberapa cepat Hasura dapat memprosesnya.
    - Sama halnya dengan kuery, jika latensi mutasi tinggi, bisa menandakan masalah performa yang perlu diinvestigasi lebih lanjut.
+ 
+5. **Top Queiries**
+Pada bagian ini service yang paling sering berjalan yaitu "hasuraferdy" dengan 3 kali tercatat.
+
+6. **Top Mutation** 
+
+7. **Top Error Rate**
+  untuk memantau dan mengidentifikasi layanan, query, atau mutasi yang paling sering mengalami kesalahan (error).
+
+
 
 ### B. Hasura Health
 ![image](https://github.com/user-attachments/assets/2995b352-b845-4a25-bb0d-1d508990ec56)
@@ -138,7 +148,8 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
 
 * Health Check Latency : NO DATA
 
-  Pada bagian ini untuk memastikan bahwa suatu layanan, sistem, atau aplikasi berfungsi dengan baik dan sesuai. Untuk Latency pada bagian ini berarti untuk mengukur seberapa cepat atau lambat 
+  Pada bagian ini untuk memastikan bahwa suatu layanan, sistem, atau aplikasi berfungsi dengan baik dan sesuai. Untuk Latency pada 
+  bagian ini berarti untuk mengukur seberapa cepat atau lambat 
   pemeriksaan tersebut diselesaikan, yang bisa memberikan indikasi performa sistem.
 
 

@@ -156,8 +156,30 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
   Pada bagian ini berguna untuk menunjukkan dua sumber hasura yaitu defaukt(hasuraferdy) dan testsejuta(hasuraferdy) yang keduanya berstatus OK.
 
 * Metadata Version : 292
-
   Pada bagian ini hanya menunjukkan versi dari metadata yang digunakan yaitu versi 292.
+kapan dan mengapa terjadi **penurunan atau kenaikan versi metadata** di **Grafana**, kita perlu melihat beberapa faktor penting:
+
+### **Kapan Penurunan Terjadi?**
+Penurunan (rollback) versi metadata biasanya terjadi saat:
+1. **Kesalahan Konfigurasi**: Jika ada masalah konfigurasi atau error saat upgrade metadata terbaru, tim mungkin bisa melakukan rollback ke versi sebelumnya.
+2. **Inkompatibilitas dengan API atau Query**: Versi metadata baru mungkin tidak kompatibel dengan query atau fitur yang digunakan sebelumnya.
+3. **Kesalahan Deployment**: Jika terjadi bug atau crash pada sistem setelah penerapan versi terbaru.
+4. **Pemulihan dari Backup**: Jika sistem mengalami kerusakan atau masalah data, metadata lama mungkin dipulihkan dari backup.
+
+### **Mengapa Terjadi Kenaikan?**
+Kenaikan (upgrade) versi metadata sering terjadi karena:
+1. **Penambahan Fitur Baru**: Metadata baru mencakup konfigurasi untuk fitur atau fungsi baru (seperti **event triggers** atau **schema relationships**).
+2. **Perbaikan Bug dan Optimalisasi**: Pembaruan metadata membawa perbaikan bug dan peningkatan performa API.
+3. **Perubahan pada Database atau API**: Jika ada perubahan struktur database atau relasi antar tabel, metadata harus diperbarui.
+4. **Peningkatan Keamanan**: Versi metadata terbaru mungkin mengandung pengaturan izin (permissions) atau kebijakan yang lebih aman.
+
+### **Pemantauan Metadata di Grafana**
+Grafana dapat digunakan untuk memonitor **versi metadata** menggunakan **Prometheus** atau data log lainnya. Pada dashboard, panel terkait metadata bisa menampilkan:
+- **Waktu Perubahan**: Kapan metadata diperbarui.
+- **Versi Metadata Lama vs Baru**: Melihat perbedaan versi metadata yang di-rollback atau di-upgrade.
+- **Trend Aktivitas**: Apakah perubahan metadata memengaruhi performa API (misalnya dengan latensi lebih rendah/tinggi).
+
+Untuk menghindari masalah, sebaiknya setiap perubahan metadata diuji terlebih dahulu di lingkungan staging sebelum diterapkan di **production**, dan sistem **monitoring serta alerting** diaktifkan untuk mendeteksi segera jika ada masalah.
 
 * Health Check Latency : NO DATA
 
@@ -165,9 +187,8 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
   bagian ini berarti untuk mengukur seberapa cepat atau lambat 
   pemeriksaan tersebut diselesaikan, yang bisa memberikan indikasi performa sistem.
 
-
-
 * Postgres Connection
-
   Pada bagian ini menunjukkan grafik penggunaan koneksi postgress dari Graphql Engine.
+
+  
 

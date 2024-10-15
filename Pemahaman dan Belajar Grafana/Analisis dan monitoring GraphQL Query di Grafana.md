@@ -103,7 +103,7 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
 2. **Query Latency (P95): 9.50 ms**
    - P95 (Percentile 95) berarti 95% dari kuery yang dijalankan memiliki latensi di bawah 9.5 milidetik, sementara 5% dari kuery bisa lebih lambat.
    - Latensi 9.50 ms sangat cepat, yang menunjukkan bahwa sistem saat ini responsif dan efisien untuk kuery yang dilakukan.
-   - Jika nilai ini meningkat, mungkin perlu ditinjau dari sisi optimisasi kuery atau performa infrastruktur (seperti database atau server).
+   - Jika nilai ini meningkat, mungkin perlu ditinjau dari jaringan dan bandwitch serta terakhir di sisi optimisasi kuery atau performa infrastruktur (seperti database atau server).
 
 3. **Total Mutations: 0**
    - Tidak ada mutasi (insert, update, atau delete) yang terjadi selama periode waktu yang ditampilkan. Jika aplikasi seharusnya melakukan banyak mutasi, dan angka ini tetap nol, bisa ada masalah di sisi klien atau server yang mencegah mutasi terjadi.

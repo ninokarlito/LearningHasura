@@ -120,6 +120,20 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
 7. **Top Error Rate**
   untuk memantau dan mengidentifikasi layanan, query, atau mutasi yang paling sering mengalami kesalahan (error).
 
+8 **HTTP Connections**
+ bagian ini berguna untuk mengukur berapa banyak HTTP Connection yang sedang aktif diluar dari Websocket Connection.
+
+9. **Cache Request Rate**
+  
+  Pada bagian ini bertujuan untuk menunjukkan seberapa sering permintaan (request) ke cache terjadi dalam suatu sistem selama periode waktu tertentu. Pada bagian ini tidak ada data terekam.
+
+10. **HTTP Data Transfer**
+
+  Pada bagian ini menunjukkan jumlah data yang ditransfer melalui protokol HTTP dalam suatu sistem atau aplikasi web selama periode waktu tertentu baik responses maupun requests.
+
+11.  **Action Data Transfer**
+  bagian ini menunjukkan grafik dari Transfer Data dengan permintaan webhook secara external, webhook sendiri yaitu bisa dikatakan sebagai "Reverse API" yang memungkinkan satu sistem atau aplikasi untuk berkomunikasi dan mengirimkan pemberitahuan secara real-time tentang peristiwa tertentu ke sistem atau aplikasi lain.
+
 
 
 ### B. Hasura Health

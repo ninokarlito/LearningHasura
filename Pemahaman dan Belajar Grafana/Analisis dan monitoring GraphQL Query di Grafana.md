@@ -116,3 +116,36 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
 ### B. Hasura Health
 ![image](https://github.com/user-attachments/assets/2995b352-b845-4a25-bb0d-1d508990ec56)
 
+* Metadata Status: CONSISTENT
+  
+  Menunjukkan bahwa metadata yang diawasi dalam sistem dalam keadaan konsisten, tanpa masalah.
+
+* Health Check using Infinity: OK
+
+  Menunjukkan data "OK" yang berarti pengecekan kesehatan sistem menggunakan Infinity sudah berjalan dan tidak ada masalah.
+
+* Health Check using BlackBox : NO DATA
+
+  Pada bagian ini di tunjukkan bahwa "No Data" dan berwarna merah yang berarti tidak ada pengecekan kesehatan sistem yang sudah dijalankan menggunakan Blackbox.
+
+* Source Health Check : OK
+
+  Pada bagian ini berguna untuk menunjukkan dua sumber hasura yaitu defaukt(hasuraferdy) dan testsejuta(hasuraferdy) yang keduanya berstatus OK.
+
+* Metadata Version : 292
+
+  Pada bagian ini hanya menunjukkan versi dari metadata yang digunakan yaitu versi 292.
+
+* Health Check Latency : NO DATA
+
+  Pada bagian ini untuk memastikan bahwa suatu layanan, sistem, atau aplikasi berfungsi dengan baik dan sesuai. Untuk Latency pada bagian ini berarti untuk mengukur seberapa cepat atau lambat 
+  pemeriksaan tersebut diselesaikan, yang bisa memberikan indikasi performa sistem.
+
+
+![image](https://github.com/user-attachments/assets/513ddfac-0e90-47b6-8065-5d0729b677dc)
+
+
+* Postgres Connection
+
+  Pada bagian ini menunjukkan grafik penggunaan koneksi postgress dari Graphql Engine.
+

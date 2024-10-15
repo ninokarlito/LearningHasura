@@ -114,7 +114,6 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
    - Sama halnya dengan kuery, jika latensi mutasi tinggi, bisa menandakan masalah performa yang perlu diinvestigasi lebih lanjut.
  
 5. **Top Queiries**
-Pada bagian ini service yang paling sering berjalan yaitu "hasuraferdy" dengan 3 kali tercatat.
 
 6. **Top Mutation** 
 

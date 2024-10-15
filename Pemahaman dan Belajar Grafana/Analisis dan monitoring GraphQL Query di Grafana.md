@@ -142,8 +142,6 @@ Dibawah ini adalah dashboard dari Grafana di input dengan source Prometheus untu
   pemeriksaan tersebut diselesaikan, yang bisa memberikan indikasi performa sistem.
 
 
-![image](https://github.com/user-attachments/assets/513ddfac-0e90-47b6-8065-5d0729b677dc)
-
 
 * Postgres Connection
 

@@ -7,6 +7,8 @@ degan perkakas yang canggih dan alur kerja berbasis kode, Hasura DDN tidak sekad
  ## 2. Dasar/Cara Kerja dan arsitektur Hasura DDN
  Dengan menggunakan Hasura DDN dapat menghubungkan sumber data anda ke Hasura Engine secara mulus menggunakan standar metadata yang fleksibel dan konsep yang disebut konektor data asli. Arsitektur ini, yang dikenal sebagai supergraf data *(data supergraph)* , memungkinkan metode pendekatan yang 100% mengutamakan kode dengan pembuatan API instan.
 
+ engan Hasura DDN, Anda dapat dengan mudah menghubungkan dan menggabungkan data dari semua sumber, sehingga menghilangkan silo data. Anda akan memiliki visibilitas yang jelas terhadap kueri Anda, kontrol keamanan yang kuat, dan sistem yang andal dan tangguh. Nikmati fleksibilitas untuk melakukan penskalaan sesuai kebutuhan, menyederhanakan alur kerja pengembangan Anda dengan alat CI/CD yang canggih, dan mengoptimalkan kinerja dengan kueri asli, sekaligus menjaga data Anda tetap aman dan logika bisnis Anda tetap terpusat.
+
 
 
 

@@ -1,12 +1,18 @@
  ## 1. Apa Itu Hasura DDN
 **Hasura DDN** *(Data Delivery Network)* yaitu sebuah platform untuk menyederhanakan dalam pengembangan dan pengoperasian api data
-terfederasi modern, agar memecahkan tantangan utama dalan prosesnya.
+terfederasi modern, agar memecahkan tantangan utama dalam prosesnya.
 
 degan perkakas yang canggih dan alur kerja berbasis kode, Hasura DDN tidak sekadar peningkatan pada bagian akses data dalam siklus hidup *(lifecycle)* pengembangan produk, tetapi juga pengubah permainan yang lengkap dalam cara Anda membuat, menjalankan, serta mengelola API.
 
- ## 2. Cara Kerja dan Arsitektur
- Tujuan utamanya yaitu untuk menyediakan akses data yang terintegrasi dan aman dari berbagai sumber data yang heterogen, seperti SQL,NoSQL,
- layanan API, dan event streams. Berikut adalah beberapa elemen utama dari arsitektur dan cara kerjanya
+ ## 2. Dasar/Cara Kerja dan arsitektur Hasura DDN
+ Dengan menggunakan Hasura DDN dapat menghubungkan sumber data anda ke Hasura Engine secara mulus menggunakan standar metadata yang fleksibel dan konsep yang disebut konektor data asli. Arsitektur ini, yang dikenal sebagai supergraf data *(data supergraph)* , memungkinkan metode pendekatan yang 100% mengutamakan kode dengan pembuatan API instan.
+
+
+
+
+
+
+
 
  1. Metadata-Driven API Layer
  Di inti Hasura DDN, API yang dihasilkan dikendalikan oleh metadata, bukan kode secara langsung. Metadata ini mencakup:

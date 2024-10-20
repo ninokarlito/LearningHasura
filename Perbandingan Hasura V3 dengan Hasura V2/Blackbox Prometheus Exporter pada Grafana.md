@@ -71,7 +71,7 @@ Berikut adalah cara umum untuk melihat **latency per query** menggunakan **Prome
 ### **Contoh Lain Sumber Data dan Alat yang Digunakan**:
 Jika menggunakan **Elasticsearch** untuk log analysis atau **MySQL** untuk database query, perlu menyesuaikan query sesuai dengan sistem tersebut. 
 
-- **Elasticsearch**: Kamu bisa mengekstrak latency query dari index yang memuat informasi tentang respon waktu query log.
+- **Elasticsearch**: Bisa mengekstrak latency query dari index yang memuat informasi tentang respon waktu query log.
 - **MySQL**: Jika menggunakan MySQL, metrik seperti `mysql_global_status_query_time` bisa digunakan untuk melacak latensi query SQL.
 
 ### Kesimpulan:

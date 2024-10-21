@@ -47,3 +47,9 @@ Dengan menggunakan penjelajah GraphiQL untuk membuat dan menguji kueri langsung 
 * **Pengujian Kueri Terintegrasi**: Uji kueri dengan header dan lihat hasil waktu nyata, semuanya di satu tempat.
 * **Pelacakan Bawaan**: Lacak kueri secara instan untuk mengidentifikasi hambatan kinerja dan optimalkan secara efisien.
 * **Alur Kerja yang Disederhanakan**: Hemat waktu dan kurangi peralihan konteks dengan menyediakan semua yang Anda butuhkan dalam satu antarmuka.
+
+### Memantau Supergraph
+Hasura DDN menyederhanakan pemantauan kinerja dengan menyediakan:
+* **Wawasan Instan**: Akses metrik dan jejak utama secara real-time di halaman wawasan.
+* **Pemantauan Terintegrasi**: Pantau kinerja langsung dalam konsol tanpa memerlukan alat tambahan.
+* **Optimasi Proaktif**: Mengidentifikasi dan mengatasi masalah kinerja dengan cepat, memastikan pengalaman API supergraph yang lancar dan efisien.

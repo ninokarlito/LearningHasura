@@ -33,4 +33,10 @@ Hasura v3 Engine dan konektor data berjalan pada bidang data. Bidang data Hasura
 Konektor tertentu juga menggunakan strategi serupa untuk menangani kumpulan koneksi secara efisien, hanya membuatnya sesuai permintaan.
 Fitur ini tersedia di GCP, AWS, dan Azure, dan juga dapat diterapkan pada Hasura DDN yang dihosting sendiri, dengan catatan infrastrukturnya mendukung kemampuan jaringan yang diperlukan.
 
+### Menjelajah Supergraph anda 
+Halaman penjelajah konsol *GUI berbasis web Hasura* menawarkan:
+* Visualisasi Komprehensif: Lihat representasi visual API Anda yang lengkap dan real-time, termasuk hubungan dan izin.
+* Dokumentasi yang Dihasilkan Secara Otomatis: Hasilkan dan perbarui dokumentasi API secara otomatis, memastikan konsistensi dan keakuratan.
+* Kolaborasi yang Ditingkatkan: Dorong komunikasi dan koordinasi yang lebih baik antar tim dengan alat visual yang intuitif dan digunakan bersama.
+
 

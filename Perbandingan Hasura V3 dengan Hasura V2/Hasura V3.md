@@ -35,8 +35,15 @@ Fitur ini tersedia di GCP, AWS, dan Azure, dan juga dapat diterapkan pada Hasura
 
 ### Menjelajah Supergraph anda 
 Halaman penjelajah konsol *GUI berbasis web Hasura* menawarkan:
-* Visualisasi Komprehensif: Lihat representasi visual API Anda yang lengkap dan real-time, termasuk hubungan dan izin.
-* Dokumentasi yang Dihasilkan Secara Otomatis: Hasilkan dan perbarui dokumentasi API secara otomatis, memastikan konsistensi dan keakuratan.
-* Kolaborasi yang Ditingkatkan: Dorong komunikasi dan koordinasi yang lebih baik antar tim dengan alat visual yang intuitif dan digunakan bersama.
+* **Visualisasi Komprehensif**: Lihat representasi visual API Anda yang lengkap dan real-time, termasuk hubungan dan izin.
+* **Dokumentasi yang Dihasilkan Secara Otomatis**: Hasilkan dan perbarui dokumentasi API secara otomatis, memastikan konsistensi dan keakuratan.
+* **Kolaborasi yang Ditingkatkan**: Dorong komunikasi dan koordinasi yang lebih baik antar tim dengan alat visual yang intuitif dan digunakan bersama.
 
+### Berinteraksi dengan Supergraph
+Hasura DDN menawarkan solusi komprehensif melalui penjelajah GraphiQL-nya, yang dirancang untuk menyederhanakan dan mempercepat proses interaksi API.
 
+Dengan menggunakan penjelajah GraphiQL untuk membuat dan menguji kueri langsung di dalam konsol, menyediakan:
+* **Definisi Skema**: Lihat seluruh skema GraphQL dan dokumentasi untuk semua kueri dan mutasi yang tersedia.
+* **Pengujian Kueri Terintegrasi**: Uji kueri dengan header dan lihat hasil waktu nyata, semuanya di satu tempat.
+* **Pelacakan Bawaan**: Lacak kueri secara instan untuk mengidentifikasi hambatan kinerja dan optimalkan secara efisien.
+* **Alur Kerja yang Disederhanakan**: Hemat waktu dan kurangi peralihan konteks dengan menyediakan semua yang Anda butuhkan dalam satu antarmuka.

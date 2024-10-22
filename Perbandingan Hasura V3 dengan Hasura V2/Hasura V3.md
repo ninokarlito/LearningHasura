@@ -53,3 +53,7 @@ Hasura DDN menyederhanakan pemantauan kinerja dengan menyediakan:
 * **Wawasan Instan**: Akses metrik dan jejak utama secara real-time di halaman wawasan.
 * **Pemantauan Terintegrasi**: Pantau kinerja langsung dalam konsol tanpa memerlukan alat tambahan.
 * **Optimasi Proaktif**: Mengidentifikasi dan mengatasi masalah kinerja dengan cepat, memastikan pengalaman API supergraph yang lancar dan efisien.
+
+### Otorisasi, Otentikasi dan Hasura 
+Dengan menggunakan variabel sesi yang diteruskan melalui *JWT* atau *webhook* dari layanan autentikasi, Hasura dapat dapat membuat aturan kontrol akses terperinci untuk menentukan dengan tepat data apa yang dapat diakses pengguna.
+Autentikasi dapat dikonfigurasi melalui token web JSON (JWT) atau layanan webhook dan dapat diintegrasikan dengan penyedia manapun  (seperti, Auth0 , Firebase Auth , AWS Cognito , solusi khusus, dll.) untuk memverifikasi pengguna dan menetapkan variabel sesi yang kemudian mengontrol akses ke data.

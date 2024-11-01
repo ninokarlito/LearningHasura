@@ -22,5 +22,8 @@ use script connection docker to hasura
 and finally output
 ![image](https://github.com/user-attachments/assets/68679b61-79b6-4aa8-a8b5-71aacf9ed349)
 
+![image](https://github.com/user-attachments/assets/3cd51583-b670-4115-bed1-585cad952a80)
+
+
 
 

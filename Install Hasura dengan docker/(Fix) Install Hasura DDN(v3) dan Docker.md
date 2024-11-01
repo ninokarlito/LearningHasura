@@ -1,3 +1,19 @@
+# 📜 Getting Started
+## 1. Download Hasura DDN
+Install terlebih dahulu Hasura DDN CLI, Berikut link unduh: 
+🚴[Download](https://graphql-engine-cdn.hasura.io/ddn/cli/v4/latest/DDN_CLI_Setup.exe)
+
+## 2. Download Docker Desktop
+lalu install Docker dengan versi terbaru, Berikut link unduh:🚴[Download](https://docs.docker.com/engine/install)
+
+Aplikasi docker harus keadaan open, jika sudah diinstall maka bisa dilihat lokasi DDN CLI dan kriteria Docker
+- Input: 
+```bash
+ddn doctor 
+```
+- Output: 
+![image](https://github.com/user-attachments/assets/dacbb8ed-6a46-483d-b855-ef2ab8737df8)
+
 masuk ke file hasura
 ![image](https://github.com/user-attachments/assets/79eab8fd-39dc-4b40-b854-936027c6c27b)
 ![image](https://github.com/user-attachments/assets/4e0646e1-4cba-42e8-a50e-a4910a1f10a8)

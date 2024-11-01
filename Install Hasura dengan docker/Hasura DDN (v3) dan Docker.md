@@ -14,3 +14,13 @@ cd C:\Users\USER\AppData\Local\Programs\DDN_CLI
 
 ![image](https://github.com/user-attachments/assets/1bb41154-ad68-4227-a6bc-056fc9e79a8a)
 
+
+use script connection docker to hasura 
+![image](https://github.com/user-attachments/assets/7b563dc9-9617-47cb-85ef-5ea3d08f675a)
+![image](https://github.com/user-attachments/assets/98e98b3c-cbd3-4761-934f-83ac904eb876)
+
+and finally output
+![image](https://github.com/user-attachments/assets/68679b61-79b6-4aa8-a8b5-71aacf9ed349)
+
+
+

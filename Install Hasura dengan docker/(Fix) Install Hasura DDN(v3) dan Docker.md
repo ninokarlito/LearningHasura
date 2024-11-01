@@ -14,17 +14,25 @@ ddn doctor
 - Output: 
 ![image](https://github.com/user-attachments/assets/dacbb8ed-6a46-483d-b855-ef2ab8737df8)
 
-masuk ke file hasura
+### Masuk ke file DDN CLI
+```
+cd C:\Users\USER\AppData\Local\Programs\DDN_CLI
+```
 ![image](https://github.com/user-attachments/assets/79eab8fd-39dc-4b40-b854-936027c6c27b)
+### Masuk/Login Melalui CLI
+Perintah di bawah ini akan mengautentikasi sesi CLI dan memberi akses ke sumber daya Hasura Cloud.
+```
+ ddn auth login
+ ```
 ![image](https://github.com/user-attachments/assets/4e0646e1-4cba-42e8-a50e-a4910a1f10a8)
 
 membuat directory
 ![image](https://github.com/user-attachments/assets/7d00b80d-d8e2-4c4b-a051-1bc7cf6aa160)
 
+![image](https://github.com/user-attachments/assets/c0df23b8-3db7-4c28-bd9b-11b661eaad86)
 
-![image](https://github.com/user-attachments/assets/36127c31-a676-4293-a806-3f3436b08506)
 
-![image](https://github.com/user-attachments/assets/613e41ec-6b4b-405c-8584-5b427ba6135c)
+!![image](https://github.com/user-attachments/assets/f306cd79-fe02-43c6-b6af-b71a0e15366d)
 
 
 ![image](https://github.com/user-attachments/assets/9a8ebbe4-1e6a-4dde-8726-8cb0aba3bbbd)

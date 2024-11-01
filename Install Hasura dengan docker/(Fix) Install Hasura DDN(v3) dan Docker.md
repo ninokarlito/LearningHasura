@@ -18,7 +18,8 @@ ddn doctor
 ```
 cd C:\Users\USER\AppData\Local\Programs\DDN_CLI
 ```
-![image](https://github.com/user-attachments/assets/79eab8fd-39dc-4b40-b854-936027c6c27b)
+![image](https://github.com/user-attachments/assets/41ee56f7-0301-4810-b8ef-25bd5b67637b)
+
 ### Masuk/Login Melalui CLI
 Perintah di bawah ini akan mengautentikasi sesi CLI dan memberi akses ke sumber daya Hasura Cloud.
 ```

@@ -47,7 +47,7 @@ ddn supergraph init .
 - Output ![image](https://github.com/user-attachments/assets/c0df23b8-3db7-4c28-bd9b-11b661eaad86)
 - Output !![image](https://github.com/user-attachments/assets/f306cd79-fe02-43c6-b6af-b71a0e15366d)
 
-
+### Perintah ini ddn connector init menambahkan konektor data asli baru ke proyek supergraf Anda. Konektor data memungkinkan Anda terhubung ke jenis sumber data tertentu (seperti PostgreSQL, MongoDB, MySQL, ClickHouse, dll.).
 ![image](https://github.com/user-attachments/assets/9a8ebbe4-1e6a-4dde-8726-8cb0aba3bbbd)
 ![image](https://github.com/user-attachments/assets/64a3463b-ff6b-4950-9512-a9aa09d6be8b)
 

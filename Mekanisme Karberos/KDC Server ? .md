@@ -15,7 +15,9 @@ Protocol autentifikasi jaringan yang menggunakan prinsip trusted third party, ma
 - Jika server Down, maka tidak ada yang dapat mengakses server karena akses terhadap jaringan harus melalui proses otorisasi karberos
 - Rawan terhadap serangan Denial-of-Service(DOS), Server tidak perlu benar-benar dibuat crash, cukup dibanjiri request maka server akan kesulitan menghandle request.
 
-**KDC (Key Distribution Center)** adalah komponen utama dalam protokol otentikasi Kerberos yang berfungsi sebagai server pusat untuk menangani distribusi kunci dan tiket autentikasi. KDC bertanggung jawab untuk memastikan bahwa komunikasi antara klien dan layanan dilakukan dengan aman melalui mekanisme tiket dan enkripsi.
+
+### **KDC (Key Distribution Center)** 
+adalah komponen utama dalam protokol otentikasi Kerberos yang berfungsi sebagai server pusat untuk menangani distribusi kunci dan tiket autentikasi. KDC bertanggung jawab untuk memastikan bahwa komunikasi antara klien dan layanan dilakukan dengan aman melalui mekanisme tiket dan enkripsi.
 
 ### Fungsi KDC
 KDC memiliki dua fungsi utama yang diimplementasikan dalam dua komponen internalnya:
@@ -23,14 +25,14 @@ KDC memiliki dua fungsi utama yang diimplementasikan dalam dua komponen internal
 1. **Authentication Server (AS)**  
    - **Tugas utama**: Memvalidasi identitas pengguna atau klien.  
    - Ketika klien mengirimkan permintaan autentikasi, AS:
-     - Memeriksa kredensial klien (misalnya username dan password yang terenkripsi).
-     - Jika valid, AS menerbitkan **Tiket Granting Ticket (TGT)**, yang digunakan untuk permintaan layanan selanjutnya.
+   - Memeriksa kredensial klien (misalnya username dan password yang terenkripsi).
+   - Jika valid, AS menerbitkan **Tiket Granting Ticket (TGT)**, yang digunakan untuk permintaan layanan selanjutnya.
 
 2. **Ticket Granting Server (TGS)**  
    - **Tugas utama**: Mengeluarkan **Service Ticket** kepada klien berdasarkan TGT yang sudah dimiliki.  
    - Ketika klien ingin mengakses layanan tertentu (misalnya, file server atau database), TGS:
-     - Memvalidasi TGT.
-     - Menerbitkan Service Ticket yang akan digunakan untuk mengakses layanan tersebut.
+   - Memvalidasi TGT.
+   - Menerbitkan Service Ticket yang akan digunakan untuk mengakses layanan tersebut.
 
 ### Cara Kerja KDC
 1. **Authentication Server (AS)**:  
@@ -57,8 +59,6 @@ KDC memiliki dua fungsi utama yang diimplementasikan dalam dua komponen internal
 - **Keamanan KDC**: Karena KDC menyimpan semua kunci rahasia, KDC menjadi target utama serangan. Oleh karena itu, KDC harus diamankan dengan sangat baik.
 
 KDC biasanya diimplementasikan dalam jaringan perusahaan dan diinstal pada server yang memiliki sumber daya tinggi untuk menangani beban permintaan tiket secara efisien. 
-
-Apakah Anda memerlukan penjelasan tambahan tentang instalasi atau pengaturan KDC? 😊
 
 
 

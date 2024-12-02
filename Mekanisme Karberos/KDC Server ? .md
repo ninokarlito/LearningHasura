@@ -1,0 +1,1 @@
+ protokol autentikasi jaringan yang dirancang untuk memberikan autentikasi yang kuat bagi aplikasi klien dan server menggunakan kriptografi kunci rahasia. Solusi ini biasanya digunakan di antara stack Hadoop untuk autentikasi di seluruh ekosistem software

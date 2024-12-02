@@ -76,10 +76,8 @@
 ---
 
 ### **Kesimpulan**
-- **Gunakan Thick Client jika**:  
-  Anda membutuhkan aplikasi yang dapat berjalan tanpa koneksi jaringan atau jika perangkat pengguna mampu menangani beban komputasi.
+- **Gunakan Thick Client apabila**:  
+   membutuhkan aplikasi yang dapat berjalan tanpa koneksi jaringan atau jika perangkat pengguna mampu menangani beban komputasi.
   
-- **Gunakan Thin Client jika**:  
-  Anda memiliki banyak pengguna, ingin pengelolaan aplikasi yang mudah, dan memiliki infrastruktur server yang kuat.
-
-Jika ingin membahas lebih lanjut (misalnya implementasi), silakan beri tahu! 😊
+- **Gunakan Thin Client apabila**:  
+   memiliki banyak pengguna, ingin pengelolaan aplikasi yang mudah, dan memiliki infrastruktur server yang kuat.

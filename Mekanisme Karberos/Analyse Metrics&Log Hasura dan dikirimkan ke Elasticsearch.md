@@ -1,5 +1,12 @@
 ### 1. Pengertian Elastic
  Adalah sebuah mesin pencarian dan analitik data yang banyak digunakan untuk memproses, menyimpan, mencari, dan menganalisis data dalam berbagai skenario, seperti log, metrik, observabilitas, dan keamanan.
+ 
+### 2. Komponen Utama Elastic
+Elastic menyediakan ekosistem produk yang saling terintegrasi, sering disebut Elastic Stack atau ELK Stack, yang meliputi:
+- Elasticsearch
+- Kibana
+- Logstash
+- Beats
 
 ### HIT
 ```

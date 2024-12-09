@@ -1,3 +1,6 @@
+### 1. Pengertian Elastic
+ Adalah sebuah mesin pencarian dan analitik data yang banyak digunakan untuk memproses, menyimpan, mencari, dan menganalisis data dalam berbagai skenario, seperti log, metrik, observabilitas, dan keamanan.
+
 ### HIT
 ```
  "_index": ".ds-metrics-generic-default-2024.12.06-000001",

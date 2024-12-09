@@ -120,3 +120,66 @@
   }
 }
 ```
+### SUCCESS
+```
+{
+  "_index": ".ds-metrics-generic-default-2024.12.06-000001",
+  "_id": "AC05qZMBatu-e5CD1agx",
+  "_version": 1,
+  "_source": {
+    "@timestamp": "2024-12-09T02:17:26.983945757Z",
+    "data_stream": {
+      "dataset": "generic",
+      "namespace": "default",
+      "type": "metrics"
+    },
+    "hasura_graphql_requests_total": 8,
+    "host": {
+      "hostname": "hasura-nino-6f5d5f4768-dv965:8080",
+      "name": "hasura-nino-6f5d5f4768-dv965:8080"
+    },
+    "operation_type": "query",
+    "parameterized_query_hash": "7116865cef017c3b09e5c9271b0e182a6dcf4c01",
+    "response_status": "success",
+    "service": {
+      "name": "hasura"
+    }
+  },
+  "fields": {
+    "parameterized_query_hash": [
+      "7116865cef017c3b09e5c9271b0e182a6dcf4c01"
+    ],
+    "@timestamp": [
+      "2024-12-09T02:17:26.983Z"
+    ],
+    "operation_type": [
+      "query"
+    ],
+    "response_status": [
+      "success"
+    ],
+    "service.name": [
+      "hasura"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "data_stream.dataset": [
+      "generic"
+    ],
+    "host.hostname": [
+      "hasura-nino-6f5d5f4768-dv965:8080"
+    ],
+    "host.name": [
+      "hasura-nino-6f5d5f4768-dv965:8080"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "hasura_graphql_requests_total": [
+      8
+    ]
+  }
+}
+```
+

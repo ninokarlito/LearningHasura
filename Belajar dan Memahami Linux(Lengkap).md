@@ -527,4 +527,3 @@ Jika Anda menghadapi masalah seperti "permission denied" atau "connection refuse
 1. **SSH server** sudah diaktifkan di komputer tujuan.
 2. Kredensial username dan password/SSH key benar.
 3. Port SSH terbuka di firewall.
-�

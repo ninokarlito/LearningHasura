@@ -1,4 +1,4 @@
-<div align="center">**Source: `RHCSA® Red Hat® Enterprise Linux® 8 (UPDATED) Training and Exam Preparation Guide, EX200, Edisi Kedua, November 2020`**
+<div align="center">**Source: `RHCSA® Red Hat® Enterprise Linux® 8 (UPDATED) Training and Exam Preparation Guide, EX200, Edisi Kedua, November 2020`** 
 `Hal: 99-104` </div>
 
 ## Struktur Direktori Linux

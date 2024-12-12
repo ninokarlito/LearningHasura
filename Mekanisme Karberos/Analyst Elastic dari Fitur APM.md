@@ -71,6 +71,49 @@ Berikut langkah-langkah untuk menganalisis performa atau masalah menggunakan das
    - Buat visualisasi khusus untuk memantau endpoint `/v1/graphql` secara real-time.
 
 ![image](https://github.com/user-attachments/assets/356cb994-512a-4b5f-983b-c2cf87aea444)
+Grafik diatas menampilkan dua metrik utama dari endpoint **`/v1/graphql`** dalam Elastic APM:
+
+---
+
+### **1. Latency (Keterlambatan)**
+- **Sumbu Y:** Rata-rata latensi dalam milidetik (ms).
+- **Sumbu X:** Waktu pengamatan.
+- **Garis Biru:** Rata-rata latensi pada hari ini.
+- **Garis Biru Muda:** Data latensi pada hari sebelumnya (sebagai perbandingan).
+- **Observasi:**
+  - Latensi rata-rata cenderung **stabil** di sekitar **3-4 ms**.
+  - Tidak ada peningkatan besar atau lonjakan signifikan pada metrik latensi.
+
+---
+
+### **2. Throughput (Lalu Lintas Transaksi)**
+- **Sumbu Y:** Jumlah transaksi per menit (tpm).
+- **Sumbu X:** Waktu pengamatan.
+- **Garis Hijau:** Throughput pada hari ini.
+- **Garis Hijau Muda:** Throughput pada hari sebelumnya.
+- **Observasi:**
+  - Terjadi lonjakan throughput mendekati **600 tpm**, menunjukkan peningkatan jumlah transaksi pada waktu tertentu.
+  - Throughput mencapai puncak stabil, lalu menurun kembali.
+
+---
+
+## **Analisis dan Tindakan**
+### **1. Hubungan Latency dan Throughput**
+- **Latensi stabil meskipun throughput meningkat.** Ini menunjukkan bahwa sistem Anda mampu menangani beban lalu lintas tambahan tanpa memperlambat waktu respons.
+- **Tindakan:** Tetap pantau latensi jika throughput terus meningkat, terutama jika mendekati batas kapasitas server.
+
+### **2. Potensi Bottleneck**
+- Jika ada peningkatan throughput mendadak:
+  - Pastikan infrastruktur backend mampu menangani permintaan besar.
+  - Periksa kapasitas server, database, atau cache yang digunakan.
+
+### **3. Optimasi Performa**
+- **Caching:** Gunakan caching pada query yang sering dipanggil untuk mengurangi beban.
+- **Load Testing:** Lakukan pengujian beban untuk memahami batas kapasitas sistem.
+- **Autoscaling:** Jika menggunakan cloud, pastikan autoscaling diaktifkan untuk menangani lonjakan throughput.
+
+---
+
 ![image](https://github.com/user-attachments/assets/944c6c5b-e503-43c7-8bce-56e14b8c204a)
 ![image](https://github.com/user-attachments/assets/bd6c7880-69c6-40cb-86bc-c52e96ad5533)
 ![image](https://github.com/user-attachments/assets/778030ad-de26-48d4-8848-9e0c1f05266f)

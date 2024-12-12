@@ -1,5 +1,5 @@
 <div align="center">**Source: `RHCSA® Red Hat® Enterprise Linux® 8 (UPDATED) Training and Exam Preparation Guide, EX200, Edisi Kedua, November 2020`** 
-`Hal: 99-104` </div>
+`Hal: 99-105` </div>
 
 ## Struktur Direktori Linux
 
@@ -99,5 +99,117 @@ Sistem file berbasis disk dan jaringan menyimpan informasi secara permanen, seda
 - Sistem file ini dikelola secara otomatis.
 
 
----
 
+# Panduan Penggunaan Perintah `tree`
+
+Perintah `tree` digunakan untuk menampilkan struktur hierarki direktori dan file di sistem Anda. Dengan beberapa opsi, Anda bisa menyesuaikan informasi yang ingin ditampilkan. Berikut adalah beberapa opsi yang sering digunakan:
+
+| Opsi  | Deskripsi                                               |
+|-------|---------------------------------------------------------|
+| `-a`  | Menyertakan file atau direktori tersembunyi dalam output |
+| `-d`  | Menampilkan hanya direktori, tanpa menyertakan file      |
+| `-h`  | Menampilkan ukuran file dalam format yang mudah dibaca  |
+| `-f`  | Menampilkan jalur lengkap untuk setiap file             |
+| `-p`  | Menampilkan izin (permissions) file atau direktori      |
+
+## Contoh Penggunaan
+
+### Menampilkan Hanya Direktori
+Untuk menampilkan hanya direktori di dalam direktori home pengguna root (`/root`), gunakan perintah berikut:
+
+```bash
+tree -d /root
+```
+
+**Penjelasan:**
+- `tree`: Memanggil perintah untuk menampilkan struktur direktori.
+- `-d`: Opsi untuk hanya menampilkan direktori.
+- `/root`: Direktori target yang ingin ditampilkan.
+
+**Hasil Output (Contoh):**
+```
+/root
+├── Documents
+├── Downloads
+│   └── Work
+└── Projects
+
+3 directories
+```
+
+### Menampilkan Direktori Tersembunyi
+Untuk menyertakan direktori tersembunyi dalam daftar, tambahkan opsi `-a`:
+
+```bash
+tree -d -a /root
+
+# Panduan Penggunaan Perintah `tree`
+
+Perintah `tree` digunakan untuk menampilkan struktur direktori dan file dalam format hierarki. Anda dapat menyesuaikan informasi yang ditampilkan menggunakan berbagai opsi.
+
+## Opsi yang Sering Digunakan
+
+| Opsi  | Deskripsi                                               |
+|-------|---------------------------------------------------------|
+| `-a`  | Menyertakan file atau direktori tersembunyi dalam output |
+| `-d`  | Menampilkan hanya direktori, tanpa menyertakan file      |
+| `-h`  | Menampilkan ukuran file dalam format yang mudah dibaca  |
+| `-f`  | Menampilkan jalur lengkap untuk setiap file             |
+| `-p`  | Menampilkan izin (permissions) file atau direktori      |
+
+## Contoh Penggunaan
+
+### 1. Menampilkan Hanya Direktori
+Untuk menampilkan hanya direktori di dalam direktori home pengguna root (`/root`), gunakan perintah berikut:
+
+```bash
+tree -d /root
+```
+
+**Hasil Output (Contoh):**
+```
+/root
+├── Documents
+├── Downloads
+│   └── Work
+└── Projects
+
+8 directories
+```
+
+Penjelasan:
+- **Kolom Output**: Output ini menunjukkan ada 8 direktori di bawah `/root`.
+
+### 2. Menampilkan File Beserta Informasi Lengkap
+Untuk menampilkan semua file di dalam direktori `/etc/sysconfig` dengan:
+- Izin file (`-p`) di kolom 1,
+- Ukuran file dalam format yang mudah dibaca (`-h`) di kolom 2,
+- Jalur lengkap file (`-f`) di kolom 3,
+
+Gunakan perintah berikut:
+
+```bash
+tree -p -h -f /etc/sysconfig
+```
+
+**Hasil Output (Contoh):**
+```
+/etc/sysconfig
+├── [drwxr-xr-x]   4.0K   /etc/sysconfig/network-scripts
+├── [-rw-r--r--]   2.0K   /etc/sysconfig/selinux
+└── [-rw-r--r--]   1.5K   /etc/sysconfig/keyboard
+
+2 directories, 2 files
+```
+
+Penjelasan:
+- Kolom 1: Menampilkan izin file atau direktori (contoh: `[drwxr-xr-x]`).
+- Kolom 2: Menampilkan ukuran file dalam format yang mudah dibaca (contoh: `4.0K`).
+- Kolom 3: Menampilkan jalur lengkap file (contoh: `/etc/sysconfig/selinux`).
+
+### 3. Melihat Manual Perintah `tree`
+Untuk melihat manual lengkap dan opsi tambahan dari perintah `tree`, jalankan:
+
+```bash
+man tree
+```

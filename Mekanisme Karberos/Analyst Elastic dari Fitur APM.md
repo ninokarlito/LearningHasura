@@ -1,8 +1,10 @@
 ### Analyst Elastic dari Fitur APM
 ![image](https://github.com/user-attachments/assets/d2a1784e-00f0-4270-bd23-e5e523b8de88)
-dashboard **Elastic Observability** dengan fokus pada transaksi di aplikasi **Hasura**. Berikut adalah analisis dari interface yang terlihat:
 
 ---
+dashboard **Elastic Observability** dengan fokus pada transaksi di aplikasi **Hasura**. Berikut adalah analisis dari interface yang terlihat:
+
+
 
 ## **Elemen Utama dalam Tampilan**
 1. **Tab Observability:**

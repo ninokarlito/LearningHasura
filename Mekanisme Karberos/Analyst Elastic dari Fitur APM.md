@@ -58,9 +58,6 @@ Berikut langkah-langkah untuk menganalisis performa atau masalah menggunakan das
 
 ### **5. Deteksi Anomali**
 - Gunakan fitur **Anomaly Detection** untuk menemukan pola yang tidak biasa, seperti lonjakan transaksi atau peningkatan error secara tiba-tiba.
-
----
-
 ## **Tips Optimasi**
 1. **Percepat Query yang Lambat:**
    - Periksa log dari query GraphQL yang lambat.
@@ -70,10 +67,13 @@ Berikut langkah-langkah untuk menganalisis performa atau masalah menggunakan das
 3. **Gunakan Dashboard Khusus:**
    - Buat visualisasi khusus untuk memantau endpoint `/v1/graphql` secara real-time.
 
-![image](https://github.com/user-attachments/assets/356cb994-512a-4b5f-983b-c2cf87aea444)
-Grafik diatas menampilkan dua metrik utama dari endpoint **`/v1/graphql`** dalam Elastic APM:
 
 ---
+
+![image](https://github.com/user-attachments/assets/356cb994-512a-4b5f-983b-c2cf87aea444)
+
+---
+Grafik diatas menampilkan dua metrik utama dari endpoint **`/v1/graphql`** dalam Elastic APM:
 
 ### **1. Latency (Keterlambatan)**
 - **Sumbu Y:** Rata-rata latensi dalam milidetik (ms).
@@ -104,8 +104,8 @@ Grafik diatas menampilkan dua metrik utama dari endpoint **`/v1/graphql`** dalam
 
 ### **2. Potensi Bottleneck**
 - Jika ada peningkatan throughput mendadak:
-  - Pastikan infrastruktur backend mampu menangani permintaan besar.
-  - Periksa kapasitas server, database, atau cache yang digunakan.
+- Pastikan infrastruktur backend mampu menangani permintaan besar.
+- Periksa kapasitas server, database, atau cache yang digunakan.
 
 ### **3. Optimasi Performa**
 - **Caching:** Gunakan caching pada query yang sering dipanggil untuk mengurangi beban.

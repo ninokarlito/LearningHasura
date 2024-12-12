@@ -121,8 +121,7 @@ Grafik diatas menampilkan dua metrik utama dari endpoint **`/v1/graphql`** dalam
 ![WhatsApp Image 2024-12-10 at 15 19 51_df53304e](https://github.com/user-attachments/assets/3d938d55-3bab-4cce-b6a1-ec4d39a0bfa5)
 ![image](https://github.com/user-attachments/assets/7124ec56-4ce4-4bd5-9be4-aeddf715050b)
 ![image](https://github.com/user-attachments/assets/b5f84d99-8cb9-4b40-81eb-2ad7ee065c55)
-![WhatsApp Image 2024-12-12 at 14 51 00_b96656c6](https://github.com/user-attachments/assets/8f3037d4-14e3-45ab-9f4c-06cf2f3ca0b5)
-
+![image](https://github.com/user-attachments/assets/b0d79b6d-1abe-4523-b954-e09c3cdb0f19)
 
 
 

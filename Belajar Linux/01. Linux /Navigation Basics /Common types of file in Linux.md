@@ -1,3 +1,6 @@
+<div align="center">**Source: `RHCSA® Red Hat® Enterprise Linux® 8 (UPDATED) Training and Exam Preparation Guide, EX200, Edisi Kedua, November 2020`** 
+`Hal: 127-131` </div>
+
 # Jenis-jenis File Umum di Linux
 
 Linux mendukung berbagai jenis file yang diidentifikasi berdasarkan jenis data yang disimpannya. Ada file yang menyimpan informasi dalam format teks biasa atau biner. Jenis ini sangat umum. Selain itu, ada file lain yang menyimpan informasi perangkat atau hanya menunjuk ke data yang sama pada disk. Pemahaman yang baik tentang jenis file di Linux penting bagi pengguna dan administrator Linux.
@@ -223,7 +226,4 @@ root@server-eric:~#
 Output akan menunjukkan bahwa file tersebut adalah **symbolic link**.
 
 ---
-
-**Source: `RHCSA® Red Hat® Enterprise Linux® 8 (UPDATED) Training and Exam Preparation Guide, EX200, Edisi Kedua, November 2020`**
-
-`Hal: 127-131`
+`

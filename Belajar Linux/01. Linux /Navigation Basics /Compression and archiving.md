@@ -1,3 +1,5 @@
+**Source: `RHCSA® Red Hat® Enterprise Linux® 8 (UPDATED) Training and Exam Preparation Guide, EX200, Edisi Kedua, November 2020`** `Hal: 131-133`
+
 ### **Penjelasan Singkat**  
 **Compression** dan **Archiving** adalah dua proses yang sering digunakan bersama untuk mengelola file dan direktori.  
 

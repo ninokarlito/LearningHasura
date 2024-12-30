@@ -2,7 +2,8 @@
 ---
 
 ### **Hasura DDN & Versi 3**  
-- **Hasura v3**:  
+- **Hasura v3**:
+  perubahan hasura v3 memiliki peningkatan signifikan pada mesin
   - Arsitektur baru dengan bahasa Rust.  
   - Spesifikasi baru yang memisahkan engine dari protokol API (GraphQL).  
   - Memperkenalkan **Native Data Connector (NDC) Specification**.

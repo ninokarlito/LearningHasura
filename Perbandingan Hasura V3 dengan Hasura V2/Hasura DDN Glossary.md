@@ -12,40 +12,30 @@ karena spesifikasi barunya, mesin tsb sekarang dipisahkan
 dari protokol API, seperti GraphQL dan untuk hasilnya dalama beberapa tahun mendatang
 mesin GraphQL akan berkembang menjadi mesin GraphQL-API dan akhirnya mesin API.
 
-Selain penyempurnaan pada mesin graphql, Hasura v3 juga memperkenalkan peluncuran Spesifikasi
-Konektor Data Asli baru dan konektor terkait 
-
 ## Hasura DDN
-*Hasura DDN* adalah penawaran baru yang didukung oleh inovasi dalam Hasura v3.
-DDN mewakili layanan terkelola untuk bidang data tersebut 
-dengan janji API yang unggul secara operasional dan menggantikan
-persyaratan infrastruktur server aplikasi/API untuk organisasi.
+*Hasura DDN* adalah inovasi baru dalam Hasura v3 dan cloud yang terdistribusi secara global yang tersedia untuk API dan konektivitas data, memungkinkan untuk pengiriman data real-time dengan sangat cepat dan aman. Mesin runtime baru di Hasura DDN mengakses metadata berdasarkan permintaan, memungkinkan peningkatan isolasi dan skalabilitas.
 
-*Hasura DDN* adalah cloud yang terdistribusi secara global dan selalu tersedia untuk API dan konektivitas data, yang memungkinkan pengiriman data real-time dengan sangat cepat dan aman. Mesin runtime baru di Hasura DDN mengakses metadata berdasarkan permintaan, memungkinkan peningkatan isolasi dan skalabilitas.
-
-Selain bidang data terkelola, DDN juga menyertakan bidang kendali baru yang terdiri dari *pembuatan metadata, CI/CD, komponen infrastruktur cloud, dan fitur kolaborasi.* Di v2, kami menggabungkan bidang kontrol dan bidang data
+DDN juga menyertakan bidang kendali baru yang terdiri dari *pembuatan metadata, CI/CD, komponen infrastruktur cloud, dan fitur kolaborasi.* Di v2, kami menggabungkan bidang kontrol dan bidang data
 
 ## Control Plane
 *Bidang kontrol* dapat mengelola konfigurasi, orkestrasi, dan koordinasi elemen bidang data serta menyediakan alat untuk menulis metadata. Ia bertanggung jawab untuk menyiapkan, mengelola perilaku, kebijakan, dan aturan yang mengatur cara data diproses dan diteruskan di bidang data. Ini juga mengawasi perilaku sistem secara keseluruhan, mengelola titik akhir API, memelihara konfigurasi API, menangani mekanisme otentikasi dan kontrol akses, dan mengumpulkan analitik atau metrik yang terkait dengan penggunaan API.
 
 ## Data Plane
-*Bidang data* dapat mengelola, menghandle atas permintaan dan respons API. Ini berkaitan dengan pelaksanaan operasi API, transmisi data antara klien dan titik pada akhir API, dan pemrosesan muatan data. Berikut ini adalah komponen utama bidang data:
+*Bidang data* dapat mengelola, menghandle atas permintaan dan respons API. Berikut ini adalah komponen utama bidang data:
 
 - Mesin GraphQL Hasura v3: Mesin menerima permintaan API (misalnya kueri GraphQL), mengubahnya menjadi representasi perantara yang dapat ditangani konektor, dan membuat rencana untuk eksekusi kueri di berbagai sumber data.
 
 - Konektor Hasura: Ini menangani eksekusi API yang sebenarnya. Mereka menerima representasi perantara dari mesin dan menggunakan mekanisme paling efisien untuk mengeksekusi kueri dan mengambil/memutasi data dari sumber data yang mendasarinya.
 
-Kedua komponen yang disebutkan di atas open sourced/bersumber terbuka.
+Kedua komponen di atas open sourced/bersumber terbuka.
 
 ## Supergraph
 Supergraf yaitu arsitektur dan model operasi untuk membangun dan menskalakan beberapa domain data (atau subgraf) sebagai satu grafik entitas dan operasi data.
 
 Supergraph dapat membantu dalam mendapatkan manfaat pendekatan monolitik terpusat (kohesi tinggi dan tata kelola yang mudah) pada model eksekusi layanan mikro gabungan (longgaran kopling dan penskalaan kepemilikan).
 
-Saat ini, supergraph menjadi lebih penting dari sebelumnya karena percepatan data dan penyebaran layanan mikro membuat kompleksitas data dan konsumsi API tidak dapat dipertahankan – muncul dalam waktu pemasaran yang lebih lambat, lebih sulit untuk mengatasi utang teknologi, dan komunikasi tim yang kompleks.
-
 ## Subgraph
-Subgraf memungkinkan tim untuk membawa domain data yang mereka miliki ke dalam supergraf. Subgraf memiliki model izin, dan siklus hidup pengembangan perangkat lunak independen, dan dapat dikembangkan, diuji, dan dibangun secara independen. Supergraf menjamin integritas komposisi subgraf. Subgraf dianalogikan dengan layanan mikro yang dimiliki oleh tim tertentu.
+Subgraph memungkinkan tim untuk membawa domain data yang mereka miliki ke dalam supergraf. Subgraf memiliki model izin, dan siklus hidup pengembangan perangkat lunak independen, dan dapat dikembangkan, diuji, dan dibangun secara independen. Supergraf menjamin integritas komposisi subgraf. Subgraf dianalogikan dengan layanan mikro yang dimiliki oleh tim tertentu.
 
 ## Hasura Metadata
 Metadata Hasura memodelkan supergraf dan menentukan API untuk supergraf tersebut. Ini adalah konfigurasi yang disediakan secara deklaratif untuk membantu terhubung ke sumber data dan menyediakan API yang berfungsi. Ini memperkenalkan konstruksi pemodelan supergraf utama seperti Jenis, Model, Perintah, Izin, dan Hubungan, yang membantu dalam memahami dan menerapkan sistem yang selaras dengan domain dunia nyata yang ingin mereka wakili. Selain konstruksi pemodelan, metadata juga menentukan konfigurasi kunci seputar keamanan API, caching, penerapan, dan CI/CD, yang membantu menjelaskan keseluruhan sistem API untuk organisasi.
@@ -96,9 +86,7 @@ Mengacu pada ID global Relai yang mengkodekan tipe dan ID suatu objek dalam satu
 ## Collection
 Koleksi adalah objek Spesifikasi Konektor Data Asli, yang merangkum bagian sumber data, menyediakan kemampuan kueri standar.
 
-Setiap koleksi ditentukan berdasarkan namanya, argumen koleksi apa pun (perlu membuat parameterisasi koleksi), jenis objek (kumpulan bidang) dari barisnya, dan beberapa metadata tambahan yang terkait dengan batasan.
-
-Melacak koleksi menghasilkan pembuatan objek 'model' di metadata Hasura.
+Setiap koleksi ditentukan berdasarkan namanya, argumen koleksi apa pun (perlu membuat parameterisasi koleksi), jenis objek (kumpulan bidang) dari barisnya, dan beberapa metadata tambahan yang terkait dengan batasan. Melacak koleksi menghasilkan pembuatan objek 'model' di metadata Hasura.
 
 ## Function
 Fungsi adalah objek Spesifikasi Konektor Data Asli yang dapat dipanggil dengan argumen untuk mendapatkan hasil, dan tidak memiliki efek samping sehingga bersifat "hanya baca". Berbeda dengan koleksi, fungsi tidak mendeskripsikan batasan dan tidak memiliki tipe objek.
@@ -137,4 +125,4 @@ Komponen ini adalah layanan cloud dasar, yang memungkinkan pembuatan build, pene
 Antarmuka di Hasura DDN yang menyediakan alat untuk visualisasi metadata, pengujian dan penerapan API, kolaborasi tim, dokumentasi, pelacakan, dan analitik.
 
 ## Cloud PAT
-Ini mengacu pada token autentikasi pribadi yang dibuat Hasura Cloud secara otomatis untuk Anda pada setiap pembuatan proyek baru. Hal ini memastikan bahwa API GraphQL Anda selalu memiliki mekanisme keamanan. PAT yang dibuat secara otomatis disertakan dalam header API cloud_pat.
+mengacu pada token autentikasi pribadi yang dibuat Hasura Cloud secara otomatis pada setiap pembuatan proyek baru. Hal ini memastikan bahwa API GraphQL selalu memiliki mekanisme keamanan. PAT yang dibuat secara otomatis disertakan dalam header API cloud_pat.

@@ -1,1 +1,31 @@
-f
+### **Apa Itu DNS?**  
+DNS (**Domain Name System**) adalah sistem yang menerjemahkan nama domain seperti `www.google.com` menjadi alamat IP seperti `142.250.190.78`, sehingga komputer dapat menemukan dan mengakses server yang sesuai di internet.
+
+### **Fungsi DNS**  
+1. **Menerjemahkan Nama Domain ke Alamat IP** – Pengguna bisa mengakses situs web menggunakan nama domain tanpa perlu mengingat alamat IP.  
+2. **Mempercepat Akses Internet** – DNS menyimpan cache alamat IP dari domain yang sering diakses untuk mempercepat pencarian.  
+3. **Menjaga Keamanan** – DNS dapat digunakan untuk memblokir akses ke situs berbahaya atau menerapkan filter keamanan.  
+4. **Mengelola Lalu Lintas Jaringan** – Digunakan dalam load balancing untuk mengarahkan pengguna ke server terdekat atau yang lebih cepat.  
+
+### **Cara Kerja DNS**  
+1. **Permintaan Resolusi DNS**  
+   - Saat pengguna mengetik `www.google.com`, browser mengirim permintaan ke server DNS.  
+2. **Pencarian Cache**  
+   - Jika alamat IP domain sudah ada dalam cache (browser, sistem operasi, atau DNS resolver), maka alamat langsung diberikan.  
+3. **Query ke Server DNS**  
+   - Jika tidak ada cache, permintaan diteruskan ke server DNS yang lebih tinggi (Root, TLD, dan Authoritative Name Server).  
+4. **Pengembalian Alamat IP**  
+   - Setelah menemukan alamat IP, DNS mengirimkannya kembali ke browser, dan browser menghubungi server web tujuan.  
+
+### **Jenis-Jenis Server DNS**  
+1. **Recursive Resolver** – Menerima permintaan dari pengguna dan mencari alamat IP dengan bertanya ke server lain.  
+2. **Root Name Server** – Server tingkat tertinggi yang membantu mengarahkan permintaan ke server yang lebih spesifik.  
+3. **TLD (Top-Level Domain) Server** – Mengelola domain seperti `.com`, `.id`, `.org`, dll.  
+4. **Authoritative Name Server** – Menyimpan catatan DNS asli suatu domain dan memberikan jawaban final atas permintaan DNS.  
+
+### **DNS dalam Docker dan Hasura**  
+Jika Anda menggunakan **Docker dan Hasura**, pengaturan DNS penting agar container dapat berkomunikasi:  
+- **Docker memiliki DNS internal** yang memungkinkan container berkomunikasi menggunakan nama service, bukan IP.  
+- Pastikan **DNS resolver** dikonfigurasi dengan benar jika container perlu mengakses layanan eksternal.  
+- Jika terjadi masalah dengan resolusi DNS di dalam container, coba gunakan **Google DNS (8.8.8.8, 8.8.4.4) atau Cloudflare DNS (1.1.1.1, 1.0.0.1)** dalam konfigurasi jaringan Docker.  
+
